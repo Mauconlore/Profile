@@ -3,34 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Técnico - Informática</title>
+  <title>Portfólio Técnico</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Meu Portfólio Técnico</h1>
-    <p>Gabriel Faria - Ensino Médio Técnico</p>
+    <div class="container">
+      <h1>&lt;/ Gabriel Faria &gt;</h1>
+      <p>Curso Técnico em Informática - Ensino Médio</p>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Sobre Mim</h2>
-      <p>Olá! Sou um estudante apaixonado por tecnologia e programação. Estou sempre aprendendo novas linguagens e criando projetos incríveis.</p>
+  <main class="container">
+    <section class="sobre">
+      <h2>👨‍💻 Sobre Mim</h2>
+      <p>Sou um estudante do curso técnico em informática, com paixão por programação, tecnologia e segurança da informação. Busco sempre aprender mais sobre desenvolvimento web, redes e automação.</p>
     </section>
 
     <section class="contato">
-      <h2>Entre em Contato</h2>
-      <button onclick="mostrarMensagem()">Clique aqui para me dizer oi!</button>
+      <h2>📬 Contato</h2>
+      <div class="contato-links">
+        <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/seulinkedin" target="_blank">LinkedIn</a>
+        <a href="mailto:seuemail@email.com">E-mail</a>
+        <a href="#" onclick="baixarCurriculo()">Baixar Currículo</a>
+      </div>
       <p id="mensagem"></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Criado por Gabriel Faria</p>
+    <p>© 2025 - Desenvolvido por Gabriel Faria</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
