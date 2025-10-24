@@ -1,4 +1,9 @@
-function baixarCurriculo() {
-    const mensagem = document.getElementById('mensagem');
-    mensagem.innerText = "🔽 Baixando currículo fictício... (adicione um PDF depois)";
-  }
+// Rolagem suave
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
